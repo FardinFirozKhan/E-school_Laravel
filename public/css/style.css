@@ -1,0 +1,281 @@
+/* End Header */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%); 
+
+}
+.navbarlink{
+   text-decoration: none;
+   color: white; 
+}
+.logo{
+    margin: 1%;
+}
+.logo-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.navbar label{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.navlink ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navlink ul li{
+    list-style: none;
+}
+.navlink ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    padding: 1rem;
+    display: block;
+}
+.navlink ul li:hover{
+    background-color: #5f0a87;
+    border-radius: 2%;
+}
+.toggle-btn{
+    position: absolute;
+    top:2.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.bar{
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+}
+/* End of Header */
+
+/* hero section  */
+
+.main-content{
+    height: 800px;
+    width: 100%;
+    background-image: url('../images/education_cover.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+.slogan{
+    height: 38%;
+    width: 45%;
+    background-color:rgba(0, 0, 0.4, 0.6);
+    padding: 2%;
+    position: absolute;
+    margin: 30% 15%;
+}
+
+.btn-admission{
+    background-color: #5f0a87;
+    padding: 2%;
+    border-radius: 0.5%;
+    text-decoration: none;
+    color: white;
+
+}
+/*End of Hero Section */ 
+
+/* course section */
+.course{
+    height: 350px;
+    width: 100%;
+    background-color: #5f0a87;
+    color: white;
+}
+.course h2{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.card{
+    display: inline-block; 
+    width: 100%;
+    background-color: #5f0a87;
+}
+/* End of Course section */
+
+/* count section */
+.count{
+    background-color: rgb(21, 21, 68);
+    color: white;
+    text-align: center;
+}
+.mycount{
+    text-align: center;
+    display: inline-block;
+    margin: 5%;
+}
+/* End of count section */
+.footer{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.fc{
+    margin: 2%;
+    display: inline-block;
+    width: 28%;
+    text-align: justify;
+}
+.fc a{
+    padding: 1% 3%;
+    background-color: #5f0a87;
+    color: white;
+    text-decoration: none;
+}
+/* start of about */
+.about{
+    background-color: #a4508b;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    text-align: justify;
+}
+/* End of about */
+/* start of course page  */
+.course-main{
+    width: 100%;
+}
+.Course-card{
+    height: auto;
+    width: 96%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2%;
+}
+/* End of Courses  */
+/* start of login page */
+.login{
+    margin:auto;
+    margin-top: 20%;
+    background-color: #5f0a87;
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+}
+.login h1{
+    margin: 5%;
+}
+.login input{
+    margin: 2%;
+}
+/* Registration form */
+.registration{
+    background-color:#5f0a87;
+    height: auto;
+    width: 40%;
+    padding: 5%;
+    text-align: center;
+    margin: 10% auto;
+    box-shadow:  5px 10px #888888;
+    color: white;
+}
+input{
+    padding: 10px;
+    width: 100%;
+    margin: 2%;
+}
+.registration button{
+    padding: 10px 20px;
+    background-color: #a4508b;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+/* End of Registration form */
+
+/* view page */
+table{
+    border-collapse: collapse;
+    font-size: large;
+    margin: 2%;
+    padding: 2%;
+    width: 100%;
+    text-align: left;
+    border: 2px solid black;
+    overflow-x:auto;
+}
+th{
+    background-color: #5f0a87;
+    color: white;
+    margin: 2%;
+    padding: 2%;
+}
+td{
+    margin: 2%;
+    padding: 2%;
+    border: 2px solid black;
+}
+.update{
+    padding: 10px;
+    background-color: rgb(14, 114, 14);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+.delete{
+    padding: 10px;
+    background-color: rgb(114, 14, 27);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+
+@media(max-width:500px) {
+    .toggle-btn{
+        display: flex;
+    }
+    .navlink{
+       display: none; 
+       width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navlink ul{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navlink ul li a{
+        padding: 0.5rem;
+    }
+    .navlink.actives{
+        display: flex;
+    }
+    .slogan{
+        height: auto;
+        width: 50%;
+
+    }
+}
